@@ -1,0 +1,117 @@
+@import '../variable';
+
+.mainButton {
+  color: white;
+	background-color: $primary-color;
+	border: none;
+	border-radius: 6px;
+	padding: 14px 20px 14px 20px;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'PrimaryFont';
+	cursor: pointer;
+	width: 100%;
+	.content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+	}
+}
+.cancelButton {
+	background-color: #A5A5A5;
+	color: $primary-font;
+	border: none;
+	border-radius: 6px;
+	padding: 14px 20px 14px 20px;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'PrimaryFont';
+	cursor: pointer;
+	width: 100%;
+}
+.disable {
+	background-color: #E9E9E9;
+	color: #A5A5A5;
+}
+.selectBox {
+	padding: 25px;
+	border: 2px solid #D9D9D9;
+	border-radius: 8px;
+	color: $primary-font;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.highlight {
+	border: 2px solid $primary-color;
+}
+.searchBox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #F5F6FF;
+	padding: 10px;
+	border-radius: 5px;
+	width: 300px;
+	input {
+		outline: none;
+		border: none;
+		background-color: #F5F6FF;
+		color: #8A8F93;
+		&::placeholder {
+			color: #8A8F93;
+		}
+	}
+}
+
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+	border-top: none;
+	flex-wrap: nowrap;
+}
+
+.passwordBox {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	.passwordInput {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border: 1px solid #E8E9EA;
+		padding: 15px;
+		border-radius: 6px;
+		input {
+			width: 90%;
+			border: none;
+			outline: none;
+			color: #282828;
+			font-size: 14px;
+			&::placeholder {
+				color: #949CA9;
+				font-family: 'PrimaryFont';
+			}
+		}
+		.icon {
+			display: flex;
+		}
+	}
+}
+
+.commonInput {
+	border: none;
+	outline: none;
+	color: #282828;
+	font-size: 14px;
+	border: 1px solid #E8E9EA;
+	padding: 15px;
+	border-radius: 6px;
+	width: 100%;
+	&::placeholder {
+		color: #949CA9;
+		font-family: 'PrimaryFont';
+	}
+}

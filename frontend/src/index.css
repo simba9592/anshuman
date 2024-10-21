@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'PrimaryFont';
+  src: url('../public/NunitoSans.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'PrimaryFont';
+}

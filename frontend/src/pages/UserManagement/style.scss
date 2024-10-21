@@ -1,0 +1,67 @@
+@import "../../variable";
+
+.userManagement-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .title-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .pageTitle {
+      font-size: 24px;
+      font-weight: 500;
+      color: $primary-color;
+    }
+  }
+  .manageTable {
+    width: 100%;
+    overflow-x: auto;
+    table, td, th {
+      border: 1px solid rgba($color: #5932EA, $alpha: 0.21);
+      border-collapse: collapse;
+    }
+    .userManage-table {
+      width: 100%;
+      @media (max-width: 1024px) {
+				width: 120%;
+			}
+      th {
+        padding: 15px 10px;
+        background-color: $primary-color;
+        color: white;
+        text-align: center;
+      }
+      td {
+        padding: 15px 10px;
+        text-align: center;
+        input {
+          border: none;
+          outline: none;
+          font-family: 'PrimaryFont';
+          font-weight: 400;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+      .showName {
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+.update-user-modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .update-inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}

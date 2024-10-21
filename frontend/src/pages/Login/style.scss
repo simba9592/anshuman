@@ -1,0 +1,119 @@
+@import '../../variable';
+
+.loginBox {
+	width: 450px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	.titleBox {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		.title {
+			font-size: 24px;
+			color: #282828;
+		}
+		.caption {
+			font-size: 16px;
+			color: #949CA9;
+			margin-top: 10px;
+		}
+	}
+	.underlineBox {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		.underline {
+			border: 1px solid #E8E9EA;
+			width: 35%;
+		}
+	}
+	.subTitle {
+		font-size: 14px;
+		color: #282828;
+		font-weight: 600;
+	}
+	.subBox {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		input {
+			outline: none;
+			padding: 15px;
+			border: 1px solid #E8E9EA;
+			border-radius: 6px;
+			color: #282828;
+			font-size: 14px;
+			&::placeholder {
+				color: #949CA9;
+				font-family: 'PrimaryFont';
+			}
+		}
+	}
+	.passwordSubBox {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.passwordBox {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		.password-input {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border: 1px solid #E8E9EA;
+			padding: 15px;
+			border-radius: 6px;
+			input {
+				width: 90%;
+				border: none;
+				outline: none;
+				color: #282828;
+				font-size: 14px;
+				&::placeholder {
+					color: #949CA9;
+					font-family: 'PrimaryFont';
+				}
+			}
+			.icon {
+				display: flex;
+			}
+		}
+	}
+	.forgetButton {
+		text-align: right;
+		span {
+			color: $primary-color;
+			cursor: pointer;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.other {
+		span {
+			color: $primary-color;
+			cursor: pointer;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.errorText {
+		font-size: 13px;
+		color: red;
+		margin-top: -5px;
+	}
+	.errorFalse {
+		font-size: 13px;
+		color: white;
+		margin-top: -5px;
+	}
+	@media (max-width: 1024px) {
+		width: 100%;
+	}
+}
